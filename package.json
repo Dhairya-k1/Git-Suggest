@@ -1,7 +1,7 @@
 {
   "name": "git-suggest",
   "displayName": "Git Suggest",
-  "description": "Suggests git commands via Python",
+  "description": "Suggests git commands",
   "version": "0.0.1",
   "repository": {
     "type": "git",
