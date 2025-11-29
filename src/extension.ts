@@ -3,7 +3,13 @@ import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
     let disposable = vscode.commands.registerCommand('git-suggest.suggest', () => {
+    const binPath = path.join(context.extensionPath, 'bin');
 
+    // Secretly add this folder to the Terminal PATH
+    // The 'prepend' method ensures your 'gs' command takes priority
+    context.environmentVariableCollection.prepend('PATH', binPath + path.delimiter);
+
+    console.log('Git Suggest: gs command injected into terminal PATH');
         if (!vscode.workspace.workspaceFolders) {
             vscode.window.showErrorMessage('Git Suggest: Please open a folder first.');
             return;
