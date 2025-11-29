@@ -1,7 +1,7 @@
 {
   "name": "git-suggest",
   "displayName": "Git Suggest",
-  "description": "AI Suggested git commands",
+  "description": "Suggested git commands",
   "publisher": "Dhairya-k1",
   "version": "0.0.1",
   "repository": {
@@ -64,3 +64,4 @@
   }
 
 }
+
