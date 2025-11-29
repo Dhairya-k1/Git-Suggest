@@ -1,8 +1,9 @@
 {
   "name": "git-suggest",
   "displayName": "Git Suggest",
-  "description": "Suggests git commands",
-  "version": "0.0.1",
+  "description": "AI Suggested git commands",
+  "publisher": "Dhairya-k1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Dhairya-k1/Git-Suggest"
