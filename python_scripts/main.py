@@ -25,7 +25,7 @@ def main():
         sys.exit(0)
 
     # 3. Print Suggestions 
-    print("\nqp  Git Suggestions:")
+    print("\n    Git Suggestions:")
     print("--------------------------------------------------")
     
     for item in suggestions:

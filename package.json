@@ -13,24 +13,26 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
-        {
-            "command": "git-suggest.suggest",
-            "title": "Git: Get Suggestions"
-        }
-    ], 
+      {
+        "command": "git-suggest.suggest",
+        "title": "Git: Get Suggestions"
+      }
+    ],
     "configuration": {
-        "title": "Git Suggest",
-        "properties": {
-            "gitSuggest.pythonPath": {
-                "type": "string",
-                "default": "python",
-                "description": "Path to the Python executable used for Git suggestions."
-            }
+      "title": "Git Suggest",
+      "properties": {
+        "gitSuggest.pythonPath": {
+          "type": "string",
+          "default": "python",
+          "description": "Path to the Python executable used for Git suggestions."
         }
+      }
     },
     "keybindings": [
       {
@@ -40,7 +42,7 @@
         "when": "editorTextFocus"
       }
     ]
-},
+  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
